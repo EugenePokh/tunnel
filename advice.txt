@@ -10,12 +10,12 @@ sudo apt update
 sudo apt install nginx
 
 Создать файл с настройками
-nano /etc/nginx/sites-available/azot-api
+nano /etc/nginx/sites-available/api
 
 Содердание файла (главное корректно указать порты, на котором работает наша программа):
 server {
     listen 80;
-    server_name 5.129.243.145;
+    server_name _.__.___.___; (IP сервера)
 
     # Увеличьте таймауты для долгих запросов
     proxy_connect_timeout 600;
